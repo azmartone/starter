@@ -40,3 +40,35 @@ A simple starter project using grunt. This is good for creating big tumblr proje
 	http://localhost:63342/dist/ to create a hybrid cloud/local dev environment.
 	* You may prefer to enter in an AWS path or Dropbox path depending on where you want to host these JS/CSS files.
 	
+* Dropbox Hosting
+* You can also try some cool grunt-contrib-copy settings to update a dropbox folder whenever you run "grunt dev".
+<pre><code>
+copy: {
+    dev: {
+        files: [
+            {
+                expand:true,
+                cwd: "src/images/",
+                src: ["**"],
+                dest: "dev/images/",
+                filter: 'isFile'
+            },
+            {
+                expand:true,
+                cwd: "dev/css/",
+                src: ["**"],
+                dest: "/Users/danny.duong/Dropbox/tp/projects/awat/css",
+                filter: 'isFile'
+            },
+            {
+                expand:true,
+                cwd: "dev/js/",
+                src: ["**"],
+                dest: "/Users/danny.duong/Dropbox/tp/projects/awat/js",
+                filter: 'isFile'
+            }
+
+        ]
+    }
+}
+</code></pre>
