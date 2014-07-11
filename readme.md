@@ -34,12 +34,10 @@ A simple starter project using grunt. This is good for creating big tumblr proje
 ####Tumblr
 
 * Testing
-	* In WebStorm, view the index.html file in your default browser. WebStorm will create a web server to host the files locally.
-	* Copy the dist/index.html or dev/index.html to the "Edit Theme" section of your tumblr dashboard.
-	* After doing so, you will see a input field labeled "JS CSS File Path". You can input the local file path in this field.
-	http://localhost:63342/dist/ to create a hybrid cloud/local dev environment.
-	* You may prefer to enter in an AWS path or Dropbox path depending on where you want to host these JS/CSS files.
-	
+    * Copy the dist/index.html or dev/index.html to the "Edit Theme" section of your tumblr dashboard.
+    * After doing so, you will see a input field labeled "JS CSS File Path". You can input the local file path in this field to create a hybrid cloud/local dev environment.
+    * You may prefer to enter in an AWS path or Dropbox path depending on where you want to host these JS/CSS files.
+    
 * Dropbox Hosting
 * You can also try some cool grunt-contrib-copy settings to update a dropbox folder whenever you run "grunt dev".
 <pre><code>
